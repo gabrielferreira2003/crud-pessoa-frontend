@@ -1,0 +1,60 @@
+.espacoFormularios{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.blocoForm{
+    height: 437px;
+    display: grid;
+    grid-column: 2/4;
+    border-radius: 35px;
+    margin-top: 52px;
+    background-color: white;
+}
+
+.conteudoForm{
+    margin: auto;
+}
+
+label{
+    font-size: 30px;
+    display: block;
+    font-family: Garamond;
+    font-weight: bold;
+}
+
+input{
+    display: block;
+    width: 271px;
+    margin: 9px 0px 26px 0px;
+    padding: 9px 17px 9px 17px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: #87cfeb93;
+    border: 1px;
+    font-family: Garamond;
+    border-color: black;
+}
+
+input::placeholder{
+    font-size: 22px;
+    font-family: Garamond;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+button{
+    width: 306px;
+    padding: 9px 0px 9px 0px;
+    font-size: 22px;
+    border-radius: 9px;
+    background-color: #3e9ec3;
+    font-family: Garamond;
+    color: white;
+}
+
+button:hover{
+    background-color: #87CEEB;
+    font-family: Garamond;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}

@@ -1,0 +1,23 @@
+#botao-criar-pessoa{
+    display: grid;
+    border-radius: 52px;
+    height: 87px;
+    width: 350px;
+    background-color: #eeca00;
+    font-size: 22px;
+    font-family: Garamond;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#botao-criar-pessoa:hover{
+    height: 91px;
+    width: 353px;
+    background-color: #b49900;
+    transition: 0.5s;
+}
+
+#botao-criar-pessoa p{
+    margin: auto;
+}

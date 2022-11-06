@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import Home from "./Home";
+import CriarPessoa from "./CriarPessoa";
+import EditarPessoa from "./EditarPessoa";
+import ExcluirPessoa from "./ExcluirPessoa";
+import ExibirPessoa from "./ExibirPessoa";
+import ExibirPessoaSelecionada from './ExibirPessoaSelecionada';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> 
+        <BrowserRouter> 
+          <Routes>  
+            <Route path="/" element={<Home/>}/>
+            <Route path="/CriarPessoa" element={<CriarPessoa/>}/>
+            <Route path="/EditarPessoa" element={<EditarPessoa/>}/>
+            <Route path="/ExcluirPessoa" element={<ExcluirPessoa/>}/>
+            <Route path="/ExibirPessoa" element={<ExibirPessoa/>}/>
+            <Route path="/ExibirPessoa/:id" element={<ExibirPessoaSelecionada/>}/>
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }

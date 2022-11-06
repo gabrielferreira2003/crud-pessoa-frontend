@@ -1,0 +1,25 @@
+header{
+    height: 140px;
+    background-color: white;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+#tituloCabecario{
+    display: grid;
+    margin: auto;
+    font-family: Garamond;
+    font-size: 44px;
+    grid-column: 4/7;
+}
+
+#voltarCabecario{
+    display: grid;
+    margin: auto;
+    grid-column: 2;
+}
+
+#imgVoltar{
+    width: 35px;
+}

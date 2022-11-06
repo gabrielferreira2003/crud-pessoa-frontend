@@ -1,0 +1,36 @@
+#blocoBotoes{
+    margin: auto;
+    display: grid;
+    height: 437px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 875px;
+}
+
+#botao1{
+    display: grid;
+    margin: auto;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#botao2{
+    display: grid;
+    margin: auto;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#botao3{
+    display: grid;
+    margin: auto;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#botao4{
+    display: grid;
+    margin: auto;
+    grid-column: 2;
+    grid-row: 2;
+}
